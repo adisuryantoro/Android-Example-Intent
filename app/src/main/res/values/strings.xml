@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Android Intent</string>
+    <string name="string_move_activity_without_data">Move Activity Without Data</string>
+    <string name="string_move_activity_with_data">Move Activity With Data</string>
+    <string name="string_move_activity_with_array_data">Move Activity With Array Data</string>
+    <string name="string_move_activity_dial_phone">Move Activity Dial Phone</string>
+    <string name="string_move_activity_camera">Move Activity Camera Phone</string>
+    <string name="string_activity_page_no_data">Activity Page No Data</string>
+    <string name="string_activity_page_take_data">Activity Page Take Data</string>
+    <string name="string_activity_page_array_data">Activity Page Array Data</string>
+    <string name="string_activity_main_explisit">Intent Explisit</string>
+    <string name="string_activity_main_impisit">Intent Implisit</string>
+</resources>

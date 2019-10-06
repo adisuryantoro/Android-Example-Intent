@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_margin_sixteen"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_activity_main_explisit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/vertical_margin_sixteen"
+            android:fontFamily="@font/quicksand_bold"
+            android:gravity="center"
+            android:text="@string/string_activity_main_explisit"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textsize_thirty_five" />
+
+        <Button
+            android:id="@+id/btn_change_page_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_full_oval"
+            android:text="@string/string_move_activity_without_data"
+            android:textAllCaps="false"
+            android:textColor="@color/colorIconsText"
+            android:textSize="@dimen/textsize_eighteen" />
+
+        <Button
+            android:id="@+id/btn_change_page_take_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_margin_sixteen"
+            android:background="@drawable/background_full_oval"
+            android:text="@string/string_move_activity_with_data"
+            android:textAllCaps="false"
+            android:textColor="@color/colorIconsText"
+            android:textSize="@dimen/textsize_eighteen" />
+
+        <Button
+            android:id="@+id/btn_change_page_take_array_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_margin_sixteen"
+            android:background="@drawable/background_full_oval"
+            android:text="@string/string_move_activity_with_array_data"
+            android:textAllCaps="false"
+            android:textColor="@color/colorIconsText"
+            android:textSize="@dimen/textsize_eighteen" />
+
+        <TextView
+            android:id="@+id/tv_activity_main_implisit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/vertical_margin_thirty_four"
+            android:fontFamily="@font/quicksand_bold"
+            android:gravity="center"
+            android:text="@string/string_activity_main_impisit"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textsize_thirty" />
+
+        <Button
+            android:id="@+id/btn_change_page_to_dial_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_margin_sixteen"
+            android:background="@drawable/background_full_oval"
+            android:text="@string/string_move_activity_dial_phone"
+            android:textAllCaps="false"
+            android:textColor="@color/colorIconsText"
+            android:textSize="@dimen/textsize_eighteen" />
+
+        <Button
+            android:id="@+id/btn_change_page_to_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_margin_sixteen"
+            android:background="@drawable/background_full_oval"
+            android:text="@string/string_move_activity_camera"
+            android:textAllCaps="false"
+            android:textColor="@color/colorIconsText"
+            android:textSize="@dimen/textsize_eighteen" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

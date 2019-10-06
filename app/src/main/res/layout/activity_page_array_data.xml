@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".feature.PageArrayDataActivity">
+
+    <ImageView
+        android:id="@+id/iv_page_array_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/iv_page_array_visivility"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_visivility" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_page_array_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:padding="@dimen/margin_margin_two"
+            android:textColor="@color/colorIconsText"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/horizontal_margin_sixteen"
+            android:layout_marginRight="@dimen/horizontal_margin_sixteen"
+            android:textSize="@dimen/textsize_thirty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="@dimen/vertical_margin_eight"
+            app:layout_constraintBottom_toTopOf="@id/tv_page_array_job" />
+
+        <TextView
+            android:id="@+id/tv_page_array_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:padding="@dimen/margin_margin_two"
+            android:textColor="@color/colorIconsText"
+            android:layout_marginLeft="@dimen/horizontal_margin_sixteen"
+            android:layout_marginRight="@dimen/horizontal_margin_sixteen"
+            android:textSize="@dimen/textsize_twenty"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/v_page_array_line"
+            android:layout_marginBottom="@dimen/vertical_margin_teen"/>
+
+        <View
+            android:id="@+id/v_page_array_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_margin_eight"
+            android:layout_marginBottom="@dimen/vertical_margin_forty"
+            android:background="@drawable/background_line"
+            android:layout_marginLeft="@dimen/horizontal_margin_sixteen"
+            android:layout_marginRight="@dimen/horizontal_margin_sixteen"
+            app:layout_constraintBottom_toTopOf="@id/ll_page_array_information"/>
+
+        <LinearLayout
+            android:id="@+id/ll_page_array_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/btn_page_array_contact"
+            android:layout_marginBottom="@dimen/vertical_margin_forty">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_weight="0.8"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/horizontal_margin_sixteen"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="Studying"
+                    android:textColor="@color/colorIconsText"
+                    android:textSize="@dimen/textsize_twenty" />
+
+                <TextView
+                    android:id="@+id/tv_page_array_studying"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorIconsText"
+                    android:textSize="@dimen/textsize_fourteen" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_margin_eight"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background_line" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_weight="0.8"
+                android:layout_marginLeft="@dimen/horizontal_margin_eight"
+                android:layout_marginRight="@dimen/horizontal_margin_eight"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="Age"
+                    android:textColor="@color/colorIconsText"
+                    android:textSize="@dimen/textsize_twenty" />
+
+                <TextView
+                    android:id="@+id/tv_page_array_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorIconsText"
+                    android:textSize="@dimen/textsize_fourteen" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_margin_eight"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background_line" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_weight="0.8"
+                android:layout_marginRight="@dimen/horizontal_margin_sixteen"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="Religion"
+                    android:textColor="@color/colorIconsText"
+                    android:textSize="@dimen/textsize_twenty" />
+
+                <TextView
+                    android:id="@+id/tv_page_array_religion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorIconsText"
+                    android:textSize="@dimen/textsize_fourteen" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_margin_eight"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background_line" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_page_array_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/vertical_margin_forty"
+            android:layout_marginEnd="@dimen/horizontal_margin_sixteen"
+            android:layout_marginStart="@dimen/horizontal_margin_sixteen"
+            android:background="@drawable/background_border_oval"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="C O N T A C T"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
